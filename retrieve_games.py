@@ -6,7 +6,6 @@ __version__ = "1.0"
 import sys, argparse, re
 from subprocess import Popen, PIPE
 from bs4 import BeautifulSoup
-import urllib.request
 from urllib.request import urlopen
 
 # Query preparaion 
