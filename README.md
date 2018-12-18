@@ -45,6 +45,7 @@ You can also retrieve many opening lines in the same query (check manyopening.tx
      text files of N games each.
      Can be used to generate look alike style in some specific lines and play against it.
 
-
+# Contact
+    If you have any comments, ideas or remark do not hesitate to contact me on lichess (Talfski)
 
 
