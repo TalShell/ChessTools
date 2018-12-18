@@ -41,11 +41,11 @@ You can also retrieve many opening lines in the same query (check manyopening.tx
      You can use directly the output file to generate studies on lichess.com website (see screenshots).
 
 # Ideas:
-     Lichess allow only 20 games per import, so there will be also a feature to split the output file onto many small
+     Lichess allows only 20 games per import, so there will be also a feature to split the output file onto many small
      text files of N games each.
      Can be used to generate look alike style in some specific lines and play against it.
 
 # Contact
-    If you have any comments, ideas or remark do not hesitate to contact me on lichess (Talfski)
+    If you have any comments, ideas or remarks do not hesitate to contact me on lichess (Talfski)
 
 
