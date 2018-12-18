@@ -1,0 +1,128 @@
+[Event "Tradewise Gibraltar"]
+[Site "Catalan Bay GIB"]
+[Date "2018.01.26"]
+[EventDate "2018.01.23"]
+[Round "4.122"]
+[Result "1-0"]
+[White "Andrew Philip Smith"]
+[Black "Mitchell R Burke"]
+[ECO "B70"]
+[WhiteElo "2111"]
+[BlackElo "1989"]
+[PlyCount "47"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Bg5 Bg7 7. Bb5+ Nbd7 8. Qe2 O-O 9. O-O-O Ne5 10. f4 Bg4 11. Nf3 Nxf3 12. gxf3 Be6 13. f5 gxf5 14. Rhg1 Kh8 15. e5 Ne8 16. f4 f6 17. exf6 exf6 18. Bh4 Nc7 19. Bd3 Bh6 20. Bg3 Qe8 21. Qg2 b5 22. Qh3 Qg6 23. Kb1 Qg4 24. Qxh6 1-0
+
+
+[Event "European Individual Chess Championship"]
+[Site "Batumi GEO"]
+[Date "2018.03.17"]
+[EventDate "2018.03.17"]
+[Round "1.126"]
+[Result "1-0"]
+[White "Thai Dai Van Nguyen"]
+[Black "Efe Kerem Uzunoglu"]
+[ECO "B70"]
+[WhiteElo "2517"]
+[BlackElo "2060"]
+[PlyCount "52"]
+
+1. e4 c5 2. Nf3 d6 3. d4 Nf6 4. Nc3 cxd4 5. Nxd4 g6 6. Be3 Ng4 7. Bc1 Nf6 8. f3 e5 9. Nb3 Be6 10. Be3 Be7 11. Qd2 b5 12. a4 b4 13. Nd5 Bxd5 14. exd5 Nbd7 15. a5 Qb8 16. Ra4 Qb7 17. Bc4 Rb8 18. O-O O-O 19. Rd1 Nc5 20. Nxc5 dxc5 21. Qe2 Bd6 22. Ba6 Qc7 23. g3 Rfe8 24. Bg5 e4 25. Bxf6 exf3 26. Qxf3 Rf8 1-0
+
+
+[Event "American Continental"]
+[Site "Montevideo URU"]
+[Date "2018.06.08"]
+[EventDate "2018.06.01"]
+[Round "9.27"]
+[Result "1-0"]
+[White "Shiyam Thavandiran"]
+[Black "Claudio Coppola"]
+[ECO "B70"]
+[WhiteElo "2417"]
+[BlackElo "2228"]
+[PlyCount "53"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. h3 Bg7 7. g3 Nc6 8. Nde2 O-O 9. Bg2 Rb8 10. a4 a6 11. O-O b5 12. axb5 axb5 13. Bg5 Nd7 14. Qc1 Nc5 15. Nd5 Re8 16. Rd1 b4 17. Be3 Bd7 18. Nd4 Qc8 19. Nxc6 Bxc6 20. Ra7 Rb7 21. Ra5 Bxd5 22. Rxd5 Qc7 23. Ra2 Rc8 24. e5 Nb3 25. Qd1 Qxc2 26. Qxc2 Rxc2 27. Ra8+ 1-0
+
+
+[Event "Chess Olympiad (Women)"]
+[Site "Batumi GEO"]
+[Date "2018.09.24"]
+[EventDate "2018.09.24"]
+[Round "1.35"]
+[Result "1-0"]
+[White "Salomeja Zaksaite"]
+[Black "Amira Marzouk"]
+[ECO "B72"]
+[WhiteElo "2278"]
+[BlackElo "1745"]
+[PlyCount "34"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 a6 7. Qd2 h5 8. f3 Nbd7 9. O-O-O b5 10. Kb1 Bb7 11. Bd3 Qc7 12. Rhe1 Bg7 13. h4 Nb6 14. f4 Nfd7 15. Bg1 Nc4 16. Qe2 e5 17. Ndxb5 1-0
+
+
+[Event "Tradewise Gibraltar"]
+[Site "Catalan Bay GIB"]
+[Date "2018.01.26"]
+[EventDate "2018.01.23"]
+[Round "4.122"]
+[Result "1-0"]
+[White "Andrew Philip Smith"]
+[Black "Mitchell R Burke"]
+[ECO "B70"]
+[WhiteElo "2111"]
+[BlackElo "1989"]
+[PlyCount "47"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Bg5 Bg7 7. Bb5+ Nbd7 8. Qe2 O-O 9. O-O-O Ne5 10. f4 Bg4 11. Nf3 Nxf3 12. gxf3 Be6 13. f5 gxf5 14. Rhg1 Kh8 15. e5 Ne8 16. f4 f6 17. exf6 exf6 18. Bh4 Nc7 19. Bd3 Bh6 20. Bg3 Qe8 21. Qg2 b5 22. Qh3 Qg6 23. Kb1 Qg4 24. Qxh6 1-0
+
+
+[Event "European Individual Chess Championship"]
+[Site "Batumi GEO"]
+[Date "2018.03.17"]
+[EventDate "2018.03.17"]
+[Round "1.126"]
+[Result "1-0"]
+[White "Thai Dai Van Nguyen"]
+[Black "Efe Kerem Uzunoglu"]
+[ECO "B70"]
+[WhiteElo "2517"]
+[BlackElo "2060"]
+[PlyCount "52"]
+
+1. e4 c5 2. Nf3 d6 3. d4 Nf6 4. Nc3 cxd4 5. Nxd4 g6 6. Be3 Ng4 7. Bc1 Nf6 8. f3 e5 9. Nb3 Be6 10. Be3 Be7 11. Qd2 b5 12. a4 b4 13. Nd5 Bxd5 14. exd5 Nbd7 15. a5 Qb8 16. Ra4 Qb7 17. Bc4 Rb8 18. O-O O-O 19. Rd1 Nc5 20. Nxc5 dxc5 21. Qe2 Bd6 22. Ba6 Qc7 23. g3 Rfe8 24. Bg5 e4 25. Bxf6 exf3 26. Qxf3 Rf8 1-0
+
+
+[Event "American Continental"]
+[Site "Montevideo URU"]
+[Date "2018.06.08"]
+[EventDate "2018.06.01"]
+[Round "9.27"]
+[Result "1-0"]
+[White "Shiyam Thavandiran"]
+[Black "Claudio Coppola"]
+[ECO "B70"]
+[WhiteElo "2417"]
+[BlackElo "2228"]
+[PlyCount "53"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. h3 Bg7 7. g3 Nc6 8. Nde2 O-O 9. Bg2 Rb8 10. a4 a6 11. O-O b5 12. axb5 axb5 13. Bg5 Nd7 14. Qc1 Nc5 15. Nd5 Re8 16. Rd1 b4 17. Be3 Bd7 18. Nd4 Qc8 19. Nxc6 Bxc6 20. Ra7 Rb7 21. Ra5 Bxd5 22. Rxd5 Qc7 23. Ra2 Rc8 24. e5 Nb3 25. Qd1 Qxc2 26. Qxc2 Rxc2 27. Ra8+ 1-0
+
+
+[Event "Chess Olympiad (Women)"]
+[Site "Batumi GEO"]
+[Date "2018.09.24"]
+[EventDate "2018.09.24"]
+[Round "1.35"]
+[Result "1-0"]
+[White "Salomeja Zaksaite"]
+[Black "Amira Marzouk"]
+[ECO "B72"]
+[WhiteElo "2278"]
+[BlackElo "1745"]
+[PlyCount "34"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 a6 7. Qd2 h5 8. f3 Nbd7 9. O-O-O b5 10. Kb1 Bb7 11. Bd3 Qc7 12. Rhe1 Bg7 13. h4 Nb6 14. f4 Nfd7 15. Bg1 Nc4 16. Qe2 e5 17. Ndxb5 1-0
+
+
