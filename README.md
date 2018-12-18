@@ -40,6 +40,7 @@ You can also retrieve many opening lines in the same query (check manyopening.tx
 # Some useful application
 
      You can use directly the output file to generate studies on lichess.com website (see screenshots).
+     Example : https://lichess.org/study/RmlJfiut
 
 # Ideas:
      Lichess allows only 20 games per import, so there will be also a feature to split the output file onto many small
