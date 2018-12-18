@@ -2,7 +2,8 @@
 Some chess tools
 
 # How to use 
-
+For the moment it is launched via command lines try this to see the help manual
+python3 retrieve_games.py -h
 
 # Examples
 
@@ -30,7 +31,9 @@ You can also retrieve many opening lines in the same query ( check manyopening.t
      > Query to be executed on chessgames.com is : http://www.chessgames.com/perl/chess.pl?yearcomp=ge&opening=C27+A30+D27&result=1-0&moves=30&year=2018&movescomp=le&
      > 20  games are retrieved.
      
-
+# Some usefull application
+    - You can use directly the output file to generate studies on lichess.com website ( see screenshots)
+    - To be used to generate look alike style in some specific lines and play against it.
 
 
 
