@@ -1,0 +1,88 @@
+[Event "Chess Olympiad"]
+[Site "Batumi GEO"]
+[Date "2018.09.24"]
+[EventDate "2018.09.24"]
+[Round "1.88"]
+[Result "1-0"]
+[White "Amir Zaibi"]
+[Black "Jerry Aska"]
+[ECO "C27"]
+[WhiteElo "2361"]
+[BlackElo "?"]
+[PlyCount "49"]
+
+1. e4 e5 2. Nc3 Bb4 3. Nd5 Bc5 4. b4 Bb6 5. Nf3 d6 6. Bc4 Nf6 7. O-O Bg4 8. Ne3 Bh5 9. d3 g5 10. Nf5 Rg8 11. Ng3 Bxf3 12. Qxf3 g4 13. Qf5 Nc6 14. Nh5 Rg6 15. Bg5 Ne7 16. Nxf6+ Kf8 17. Nxh7+ Kg7 18. Qxf7+ Kh8 19. Bxe7 Qg8 20. Qxg8+ Raxg8 21. Bxg8 Rxg8 22. Nf6 Rg7 23. Nd5 Bd4 24. Bf6 Bxa1 25. Rxa1 1-0
+
+[Event "European Club Cup"]
+[Site "Porto Carras GRE"]
+[Date "2018.10.14"]
+[EventDate "2018.10.12"]
+[Round "3.14"]
+[Result "1-0"]
+[White "Semen Lomasov"]
+[Black "Jyri Lammi"]
+[ECO "C27"]
+[WhiteElo "2540"]
+[BlackElo "2099"]
+[PlyCount "51"]
+
+1. e4 e5 2. Nc3 Nc6 3. Bc4 Bc5 4. Qg4 Kf8 5. Qf3 Nf6 6. Nge2 Nd4 7. Nxd4 Bxd4 8. Ne2 Bb6 9. h3 c6 10. d3 h6 11. g4 d5 12. Bb3 g5 13. Ng3 Be6 14. Be3 d4 15. Bd2 Ke7 16. Ke2 Kd7 17. Nf5 Ne8 18. h4 gxh4 19. Rxh4 Qf6 20. Rah1 Bxf5 21. gxf5 Nd6 22. Rxh6 Rxh6 23. Rxh6 Qg7 24. Qh5 Rf8 25. Rh7 Qg8 26. Qg6 1-0
+
+[Event "European Club Cup"]
+[Site "Porto Carras GRE"]
+[Date "2018.10.16"]
+[EventDate "2018.10.12"]
+[Round "5.24"]
+[Result "1-0"]
+[White "Konstantinos-Spyros Liodakis"]
+[Black "Richard Vedder"]
+[ECO "C27"]
+[WhiteElo "2182"]
+[BlackElo "2288"]
+[PlyCount "49"]
+
+1. e4 e5 2. Nc3 Nf6 3. Bc4 Nxe4 4. Qh5 Nd6 5. Bb3 Be7 6. Qxe5 O-O 7. Nge2 Nc6 8. Qf4 Bg5 9. Qf3 Ne5 10. Qg3 Re8 11. d4 Bxc1 12. Rxc1 Nec4 13. O-O Nxb2 14. Nf4 c6 15. Rb1 Nbc4 16. Bxc4 Nxc4 17. Rfe1 Rf8 18. Nh5 g6 19. Ne4 d5 20. Nef6+ Kh8 21. Qg5 gxh5 22. Qh6 Bf5 23. Nxh5 Rg8 24. Re8 Qg5 25. Qxg5 1-0
+[Event "Chess Olympiad"]
+[Site "Batumi GEO"]
+[Date "2018.09.24"]
+[EventDate "2018.09.24"]
+[Round "1.88"]
+[Result "1-0"]
+[White "Amir Zaibi"]
+[Black "Jerry Aska"]
+[ECO "C27"]
+[WhiteElo "2361"]
+[BlackElo "?"]
+[PlyCount "49"]
+
+1. e4 e5 2. Nc3 Bb4 3. Nd5 Bc5 4. b4 Bb6 5. Nf3 d6 6. Bc4 Nf6 7. O-O Bg4 8. Ne3 Bh5 9. d3 g5 10. Nf5 Rg8 11. Ng3 Bxf3 12. Qxf3 g4 13. Qf5 Nc6 14. Nh5 Rg6 15. Bg5 Ne7 16. Nxf6+ Kf8 17. Nxh7+ Kg7 18. Qxf7+ Kh8 19. Bxe7 Qg8 20. Qxg8+ Raxg8 21. Bxg8 Rxg8 22. Nf6 Rg7 23. Nd5 Bd4 24. Bf6 Bxa1 25. Rxa1 1-0
+
+[Event "European Club Cup"]
+[Site "Porto Carras GRE"]
+[Date "2018.10.14"]
+[EventDate "2018.10.12"]
+[Round "3.14"]
+[Result "1-0"]
+[White "Semen Lomasov"]
+[Black "Jyri Lammi"]
+[ECO "C27"]
+[WhiteElo "2540"]
+[BlackElo "2099"]
+[PlyCount "51"]
+
+1. e4 e5 2. Nc3 Nc6 3. Bc4 Bc5 4. Qg4 Kf8 5. Qf3 Nf6 6. Nge2 Nd4 7. Nxd4 Bxd4 8. Ne2 Bb6 9. h3 c6 10. d3 h6 11. g4 d5 12. Bb3 g5 13. Ng3 Be6 14. Be3 d4 15. Bd2 Ke7 16. Ke2 Kd7 17. Nf5 Ne8 18. h4 gxh4 19. Rxh4 Qf6 20. Rah1 Bxf5 21. gxf5 Nd6 22. Rxh6 Rxh6 23. Rxh6 Qg7 24. Qh5 Rf8 25. Rh7 Qg8 26. Qg6 1-0
+
+[Event "European Club Cup"]
+[Site "Porto Carras GRE"]
+[Date "2018.10.16"]
+[EventDate "2018.10.12"]
+[Round "5.24"]
+[Result "1-0"]
+[White "Konstantinos-Spyros Liodakis"]
+[Black "Richard Vedder"]
+[ECO "C27"]
+[WhiteElo "2182"]
+[BlackElo "2288"]
+[PlyCount "49"]
+
+1. e4 e5 2. Nc3 Nf6 3. Bc4 Nxe4 4. Qh5 Nd6 5. Bb3 Be7 6. Qxe5 O-O 7. Nge2 Nc6 8. Qf4 Bg5 9. Qf3 Ne5 10. Qg3 Re8 11. d4 Bxc1 12. Rxc1 Nec4 13. O-O Nxb2 14. Nf4 c6 15. Rb1 Nbc4 16. Bxc4 Nxc4 17. Rfe1 Rf8 18. Nh5 g6 19. Ne4 d5 20. Nef6+ Kh8 21. Qg5 gxh5 22. Qh6 Bf5 23. Nxh5 Rg8 24. Re8 Qg5 25. Qxg5 1-0
