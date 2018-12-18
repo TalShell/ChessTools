@@ -72,8 +72,6 @@ if debug:
 
 #Now retrievel of games
 gid_url="http://www.chessgames.com/perl/chessgame?gid="
-pageid=1
-
 with open(output_file, 'w') as f:
     for gid in my_games:
         current_g = gid_url + gid
@@ -82,5 +80,3 @@ with open(output_file, 'w') as f:
         for game in games_raw:
             print(game['pgn'], file=f)
             print('\n', file=f)
-        
-
