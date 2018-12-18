@@ -13,8 +13,9 @@ For the moment it is launched via command lines, try this to see the help manual
                             [-yc YEARCOMP] [-r RESULT] [-d DEBUG]
                             [-out OUTPUT_FILE]
 There are some mandatory arguments to avoid rejecting the query by chessgames website such as 
-    -   opening, ECO codes are used to filter on this
-
+   
+       opening, ECO codes are used to filter on this
+       
 Optional parameters have some default values 
 
        year of the game is by default 1960
