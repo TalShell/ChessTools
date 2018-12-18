@@ -3,6 +3,7 @@ Some chess tools to retrieve chess games of specific openings/years
 
 # How to use 
 For the moment it is launched via command lines, try this to see the help manual
+
     python3 retrieve_games.py -h
 
 # Examples
