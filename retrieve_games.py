@@ -8,6 +8,16 @@ from subprocess import Popen, PIPE
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
 
+gid_url="http://www.chessgames.com/perl/chessgame?gid="
+
+def retrieve_singlegame( gid, f):
+   current_g = gid_url + gid
+   soup = BeautifulSoup(urlopen(current_g),"lxml")
+   games_raw = soup.find_all("div", {"id": "olga-data"})
+   for game in games_raw:
+      print(game['pgn'], file=f)
+      print('\n', file=f)
+   
 #Query preparaion 
 parser = argparse.ArgumentParser(description="Retrieve all games of a specific player, lines, tournement..")
 
@@ -20,7 +30,7 @@ parser.add_argument("-yc" , "--yearcomp",help="le or ge. e.g: -y 1960 -yc le -> 
 parser.add_argument("-r" , "--result",help="{ 1-0 or 0-1 or 1/2-1/2 or nothing}",type=str,default='')
 parser.add_argument("-d" , "--debug",help="Activate traces and prints",default=False,type=bool)
 parser.add_argument("-out" , "--output_file",help="output text file ",default='output.txt',type=str)
-parser.add_argument("-s" , "--split",help="-s N,split result onto files of N games each",type=int)
+parser.add_argument("-s" , "--split",help="-s N,split result onto files of N games each",default=1,type=int)
 
 input_args = parser.parse_args()
 
@@ -63,7 +73,8 @@ for i in range(50) :
         break;
 
 end1= time.time()
-print(len(games_set) , ' games are retrieved. It took ',end1-start,'s. Script stopped at page ',numberofpages)
+numberofgames = len(games_set) 
+print(numberofgames , ' games are retrieved. It took ',end1-start,'s. Script stopped at page ',numberofpages)
 
 if debug:
     print('games id are:')
@@ -71,16 +82,10 @@ if debug:
         print(g)
 
 #Now retrievel of games
-gid_url="http://www.chessgames.com/perl/chessgame?gid="
 with open(output_file, 'w') as f:
     for gid in games_set:
-        current_g = gid_url + gid
-        soup = BeautifulSoup(urlopen(current_g),"lxml")
-        games_raw = soup.find_all("div", {"id": "olga-data"})
-        for game in games_raw:
-            print(game['pgn'], file=f)
-            print('\n', file=f)
-
+       retrieve_singlegame( gid, f)
+       
 end2 = time.time()
 
 print('Job done! It took in total ',end2-start,'s')
