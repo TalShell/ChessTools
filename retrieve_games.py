@@ -83,14 +83,14 @@ for i in range(50) :
    myurl = chessgames_url+ "page="+str(i)+'&'
    list_pages.append(myurl)
 
-#search in 15 pages at time
-with Pool(20) as p:
+#search in 10 pages at time
+with Pool(25) as p:
    games_gid = p.map(parse_url, list_pages)
    
 games_gid = list(filter(None, games_gid)) # trim empty elements
 games_gid=[ g.split(',') for g in games_gid] #split each list element onto list of gid
 games_gid=list(itertools.chain(*games_gid)) #merge all list of gids
-
+games_gid=list(set(games_gid)) #dirty way to delete annoyong doublon
 end1= time.time()
 
 print(len(games_gid),'game Ids retrieved. The preparation took ',end1-start , 's')
@@ -102,7 +102,7 @@ if debug:
 
 #Now retrievel of games
 games_pgn = []
-n_jobs= max(math.ceil(len(games_gid)/5)+1,20) #well let's be polite to not get kicked by chessgames :)
+n_jobs= min(math.ceil(len(games_gid)/5)+1,20) #well let's be polite to not get kicked by chessgames :)
 
 #Fetch N games at the same time, 
 with Pool(n_jobs) as p:
