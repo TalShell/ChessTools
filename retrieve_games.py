@@ -102,7 +102,7 @@ if debug:
 
 #Now retrievel of games
 games_pgn = []
-n_jobs= min(math.ceil(len(games_gid)/5)+1,20) #well let's be polite to not get kicked by chessgames :)
+n_jobs= min(math.ceil(len(games_gid)/5)+1,10) #well let's be polite to not get kicked by chessgames :)
 
 #Fetch N games at the same time, 
 with Pool(n_jobs) as p:
@@ -110,7 +110,7 @@ with Pool(n_jobs) as p:
 
 if(len(games_pgn) >0):
    with open(output_file, 'a+')  as f:
-      f.write('\n'.join(games_pgn))
+      f.write('\n\n'.join(games_pgn))
 end2 = time.time()
 
 print('Job done! It took in total ',end2-start,'s')
