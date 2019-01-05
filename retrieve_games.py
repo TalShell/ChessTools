@@ -3,21 +3,46 @@ __license__ = "Public Domain"
 __version__ = "1.0"
 
 
-import sys, argparse, re, time
+import sys, argparse, re, time,math
 from subprocess import Popen, PIPE
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
+from multiprocessing import Pool
+import itertools
+
 
 gid_url="http://www.chessgames.com/perl/chessgame?gid="
+chessgames_url = "http://www.chessgames.com/perl/chess.pl?"
 
-def retrieve_singlegame( gid, f):
+def retieve_gamesId(lines_raw):
+   games_set=set()
+   for line in lines_raw:
+      for t in line.find_all('a', href= True) :
+         if("/perl/chessgame?gid" in t['href']):
+            games_set.add(t['href'].split("=")[-1])
+            break
+   return ','.join(games_set)
+
+
+def retrieve_singlegame( gid):
    current_g = gid_url + gid
-   soup = BeautifulSoup(urlopen(current_g),"lxml")
-   games_raw = soup.find_all("div", {"id": "olga-data"})
-   for game in games_raw:
-      print(game['pgn'], file=f)
-      print('\n', file=f)
-   
+   try:
+      soup = BeautifulSoup(urlopen(current_g),"lxml")
+      games_raw = soup.find_all("div", {"id": "olga-data"})
+      for game in games_raw:
+         return ''.join(str(game['pgn']))
+   except Exception as excep:
+      print(str(excep))
+
+def parse_url(myurl):
+   try:
+      soup = BeautifulSoup(urlopen(myurl),"lxml")
+      lines_raw = soup.find_all("font", {"face":"verdana,arial,helvetica","size":"-1"})
+      #Get lines containing the gid 
+      return retieve_gamesId(lines_raw)
+   except Exception as excep:
+      print(str(excep))
+      
 #Query preparaion 
 parser = argparse.ArgumentParser(description="Retrieve all games of a specific player, lines, tournement..")
 
@@ -34,7 +59,6 @@ parser.add_argument("-s" , "--split",help="-s N,split result onto files of N gam
 
 input_args = parser.parse_args()
 
-url = "http://www.chessgames.com/perl/chess.pl?"
 debug = False
 #prepare the url to be curled 
 if debug:
@@ -43,7 +67,7 @@ if debug:
 start = time.time()
 for i in vars(input_args):
     if(i !='debug' and i!='output_file'):
-        url+=str(i)+'='+str(getattr(input_args, i))+'&'
+        chessgames_url+=str(i)+'='+str(getattr(input_args, i))+'&'
     else:
         if str(i)=='debug':
             debug = getattr(input_args, i)
@@ -52,40 +76,41 @@ for i in vars(input_args):
     if debug:
         print(i, getattr(input_args, i))
 
-print('Query to be executed on chessgames.com is :' , url)
+print('Query to be executed on chessgames.com is :' , chessgames_url)
 
-games_set=set()
-numberofpages= 1
+list_pages=[]
 for i in range(50) : 
-    myurl = url+ "page="+str(i)+'&'
-    soup = BeautifulSoup(urlopen(myurl),"lxml")
-    found =False
-    lines_raw = soup.find_all("font", {"face":"verdana,arial,helvetica","size":"-1"})
-    #Get lines containing the gid 
-    for line in lines_raw:
-        for t in line.find_all('a', href= True) :
-            if("/perl/chessgame?gid" in t['href']):
-                games_set.add(t['href'].split("=")[-1])
-                found=True
-                break
-    if not found :
-        numberofpages=i-1
-        break;
+   myurl = chessgames_url+ "page="+str(i)+'&'
+   list_pages.append(myurl)
+
+#search in 15 pages at time
+with Pool(20) as p:
+   games_gid = p.map(parse_url, list_pages)
+   
+games_gid = list(filter(None, games_gid)) # trim empty elements
+games_gid=[ g.split(',') for g in games_gid] #split each list element onto list of gid
+games_gid=list(itertools.chain(*games_gid)) #merge all list of gids
 
 end1= time.time()
-numberofgames = len(games_set) 
-print(numberofgames , ' games are retrieved. It took ',end1-start,'s. Script stopped at page ',numberofpages)
+
+print(len(games_gid),'game Ids retrieved. The preparation took ',end1-start , 's')
 
 if debug:
     print('games id are:')
-    for g in games_set:
+    for g in games_gid:
         print(g)
 
 #Now retrievel of games
-with open(output_file, 'w') as f:
-    for gid in games_set:
-       retrieve_singlegame( gid, f)
-       
+games_pgn = []
+n_jobs= max(math.ceil(len(games_gid)/5)+1,20) #well let's be polite to not get kicked by chessgames :)
+
+#Fetch N games at the same time, 
+with Pool(n_jobs) as p:
+   games_pgn = p.map(retrieve_singlegame, games_gid)
+
+if(len(games_pgn) >0):
+   with open(output_file, 'a+')  as f:
+      f.write('\n'.join(games_pgn))
 end2 = time.time()
 
 print('Job done! It took in total ',end2-start,'s')
