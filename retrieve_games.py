@@ -30,7 +30,7 @@ def retrieve_singlegame( gid):
       soup = BeautifulSoup(urlopen(current_g),"lxml")
       games_raw = soup.find_all("div", {"id": "olga-data"})
       for game in games_raw:
-         return ''.join(str(game['pgn']))
+         return ''.join(str(game['pgn'])+'\n')
    except Exception as excep:
       print(str(excep))
 
@@ -110,7 +110,7 @@ with Pool(n_jobs) as p:
 
 if(len(games_pgn) >0):
    with open(output_file, 'a+')  as f:
-      f.write('\n\n'.join(games_pgn))
+      f.write('\n'.join(games_pgn))
 end2 = time.time()
 
 print('Job done! It took in total ',end2-start,'s')
